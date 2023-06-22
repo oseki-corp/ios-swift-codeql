@@ -45,6 +45,8 @@ jobs:
       
     - name: Add GitHub Action Details from PR
       uses: ActionsDesk/github-actions-details-action@v2.2.0
+      with:
+        search_token: ${{ secrets.SEARCH_TOKEN }}
 
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
